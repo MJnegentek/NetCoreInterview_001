@@ -30,9 +30,9 @@ namespace TestNexsus.Data
                              df_Name=dt.df_Name,
                              df_CreatedDate = dt.df_CreatedDate
                          }
-                         ).ToList();
+                         ).Take(0);
 
-            return query;
+            return query.ToList();
         }
     }
 }
